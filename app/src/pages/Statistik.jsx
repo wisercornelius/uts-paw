@@ -7,7 +7,22 @@ export default function Statistik() {
   return (
     <section>
       <h1>Statistik</h1>
-      <pre>{JSON.stringify(perKategori, null, 2)}</pre>
+      <table>
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Jumlah</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(perKategori).map(([kategori, jumlah]) => (
+            <tr key={kategori}>
+              <td>{kategori}</td>
+              <td>{jumlah}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </section>
   )
 }
