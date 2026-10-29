@@ -1,10 +1,82 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "PPLK ITERA 2026",
+    "kategori": "Organisasi",
+    "tanggal": "2026-08-02",
+    "lokasi": "GKU 1 ITERA",
+    "penyelenggara": "ITERA"
+  },
+  {
+    "id": "2",
+    "judul": "Informatics Festival 2026",
+    "kategori": "Organisasi",
+    "tanggal": "2026-10-11",
+    "lokasi": "Aula GKU 2 ITERA",
+    "penyelenggara": "Himpunan Mahasiswa Informatika ITERA"
+  },
+  {
+    "id": "3",
+    "judul": "Studium Generale INFEST 2026",
+    "kategori": "Seminar",
+    "tanggal": "2026-09-10",
+    "lokasi": "Aula GKU 1 ITERA",
+    "penyelenggara": "Himpunan Mahasiswa Informatika ITERA"
+  },
+  {
+    "id": "4",
+    "judul": "PES Tournament INFEST 2026",
+    "kategori": "Lomba",
+    "tanggal": "2026-11-01",
+    "lokasi": "R406 GKU 2 ITERA",
+    "penyelenggara": "Himpunan Mahasiswa Informatika ITERA"
+  },
+  {
+    "id": "5",
+    "judul": "FTI Expo 2026",
+    "kategori": "Pameran",
+    "tanggal": "2026-12-02",
+    "lokasi": "Pelataran GKU 2 ITERA",
+    "penyelenggara": "FTI ITERA"
+  },
+  {
+    "id": "6",
+    "judul": "IGTTPB 2026",
+    "kategori": "Organisasi",
+    "tanggal": "2026-11-10",
+    "lokasi": "Aula Gedung F ITERA",
+    "penyelenggara": "Himpunan Mahasiswa Informatika ITERA"
+  },
+  {
+    "id": "7",
+    "judul": "ITERA Career Day 2026",
+    "kategori": "Pameran",
+    "tanggal": "2026-10-20",
+    "lokasi": "Aula Gedung E ITERA",
+    "penyelenggara": "ITERA"
+  },
+  {
+    "id": "8",
+    "judul": "ITERA Olympic 2026",
+    "kategori": "Lomba",
+    "tanggal": "2026-11-13",
+    "lokasi": "Kampus ITERA",
+    "penyelenggara": "ITERA"
+  },
+  {
+    "id": "9",
+    "judul": "CIBT 2026",
+    "kategori": "Lomba",
+    "tanggal": "2026-10-09",
+    "lokasi": "Lapangan Basket Whapec",
+    "penyelenggara": "UKM IBT ITERA"
+  },
+  {
+    "id": "10",
+    "judul": "PERSITERA CUP 2026",
+    "kategori": "Lomba",
+    "tanggal": "2026-10-28",
+    "lokasi": "GOR UIN Raden Intan Lampung",
+    "penyelenggara": "UKM PERSITERA ITERA"
   }
 ]
