@@ -7,8 +7,13 @@ export default function Tambah() {
 
   const ubah = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
+  const simpan = (e) => {
+    e.preventDefault()
+    console.log('Data yang akan disimpan:', form)
+  }
+  
   return (
-    <form>
+    <form onSubmit={simpan} noValidate>
       <h1>Tambah Tugas</h1>
 
       <label htmlFor="judul">Judul</label>
