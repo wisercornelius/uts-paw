@@ -1,8 +1,13 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import useKoleksi from '../hooks/useKoleksi.js'
+import './Tambah.css'
 
-const AWAL = { judul: '', kategori: 'Kuliah' }
+const AWAL = { judul: '', kategori: 'Kuliah', tenggat: '', prioritas: 'sedang' }
 
 export default function Tambah() {
+  const { tambah } = useKoleksi()
+  const navigate = useNavigate()
   const [form, setForm] = useState(AWAL)
   const [galat, setGalat] = useState('')
 
@@ -14,12 +19,12 @@ export default function Tambah() {
       setGalat('Judul wajib diisi, minimal 3 karakter.')
       return
     }
-    setGalat('')
-    console.log('Data yang akan disimpan:', form)
+    tambah({ ...form, judul: form.judul.trim() })
+    navigate('/koleksi')
   }
 
   return (
-    <form onSubmit={simpan} noValidate>
+    <form className="formulir" onSubmit={simpan} noValidate>
       <h1>Tambah Tugas</h1>
 
       <label htmlFor="judul">Judul</label>
@@ -32,8 +37,17 @@ export default function Tambah() {
         <option>Organisasi</option>
       </select>
 
+      <label htmlFor="tenggat">Tenggat</label>
+      <input id="tenggat" name="tenggat" type="date" value={form.tenggat} onChange={ubah} />
+
+      <label htmlFor="prioritas">Prioritas</label>
+      <select id="prioritas" name="prioritas" value={form.prioritas} onChange={ubah}>
+        <option value="rendah">Rendah</option>
+        <option value="sedang">Sedang</option>
+        <option value="tinggi">Tinggi</option>
+      </select>
+
       <button type="submit">Simpan</button>
-      <p>Isi state saat ini: {JSON.stringify(form)}</p>
     </form>
   )
 }
