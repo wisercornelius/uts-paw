@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer>
-      <p>Aplikasi Koleksi Kegiatan</p>
+    <footer className="kaki">
+      Ujian Tengah Semester Pengembangan Aplikasi Web
     </footer>
   )
 }
