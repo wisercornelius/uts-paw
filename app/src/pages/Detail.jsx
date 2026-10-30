@@ -34,7 +34,7 @@ export default function Detail() {
         <dd>{item.tanggal}</dd>
         <dt>Lokasi</dt>
         <dd>{item.lokasi}</dd>
-        <dt>{Penyelenggara}</dt>
+        <dt>Penyelenggara</dt>
         <dd>{item.penyelenggara}</dd>
       </dl>
       <div className="aksi">
