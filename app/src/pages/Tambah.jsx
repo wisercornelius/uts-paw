@@ -37,15 +37,14 @@ export default function Tambah() {
         <option>Organisasi</option>
       </select>
 
-      <label htmlFor="tenggat">Tenggat</label>
-      <input id="tenggat" name="tenggat" type="date" value={form.tenggat} onChange={ubah} />
+      <label htmlFor="tanggal">Tanggal</label>
+      <input id="tanggal" name="tanggal" type="date" value={form.tanggal} onChange={ubah} />
 
-      <label htmlFor="prioritas">Prioritas</label>
-      <select id="prioritas" name="prioritas" value={form.prioritas} onChange={ubah}>
-        <option value="rendah">Rendah</option>
-        <option value="sedang">Sedang</option>
-        <option value="tinggi">Tinggi</option>
-      </select>
+      <label htmlFor="lokasi">Lokasi</label>
+      <input id="lokasi" name="lokasi" type="text" value={form.lokasi} onChange={ubah} />
+
+      <label htmlFor="penyelenggara">Penyelenggara</label>
+      <input id="penyelenggara" name="penyelenggara" type="text" value={form.penyelenggara} onChange={ubah} />
 
       <button type="submit">Simpan</button>
     </form>
