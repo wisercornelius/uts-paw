@@ -72,10 +72,20 @@ Tema: Agenda Kegiatan Kampus
 Deployment: https://wisercornelius.github.io/uts-paw/
 
 ![Tangkapan layar beranda](docs/beranda.png)
+![Tangkapan layar koleksi](docs/koleksi.png)
+![Tangkapan layar tambah](docs/tambah.png)
+![Tangkapan layar statistik](docs/statistik.png)
+![Tangkapan layar tentang](docs/tentang.png)
 
 ## Fitur
 
-- ...
+- Menampilkan ringkasan jumlah kegiatan dan kategori di halaman beranda.
+- Menampilkan daftar kegiatan kampus beserta kategori, tanggal, lokasi, dan penyelenggara.
+- Mencari kegiatan berdasarkan judul dan memfilter daftar berdasarkan kategori.
+- Melihat detail kegiatan serta menghapus kegiatan dengan konfirmasi.
+- Menambahkan kegiatan baru melalui formulir dengan validasi judul.
+- Menampilkan statistik jumlah kegiatan berdasarkan kategori.
+- Menyimpan koleksi di `localStorage` agar perubahan tetap tersimpan saat halaman dibuka kembali.
 
 ## Menjalankan secara lokal
 
@@ -85,5 +95,12 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+- Komponen fungsional dan pemecahan antarmuka menjadi komponen yang dapat digunakan kembali.
+- Props untuk mengirim data dan fungsi antar-komponen.
+- State dengan useState untuk formulir, pencarian, filter kategori, serta status aplikasi.
+- Context dan Provider untuk membagikan data koleksi ke berbagai halaman.
+- Custom hooks untuk mengakses koleksi dan mengelola data di localStorage.
+- useEffect untuk mengambil data awal dan menyinkronkan data ke localStorage.
+- Rendering kondisional untuk status memuat, pesan kesalahan, dan hasil pencarian kosong.
+- Rendering daftar dengan map() dan atribut key.
+- React Router untuk navigasi halaman, rute detail, serta halaman 404.
